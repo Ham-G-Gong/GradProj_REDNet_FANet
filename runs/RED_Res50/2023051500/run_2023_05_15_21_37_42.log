@@ -1,0 +1,93 @@
+2023-05-15 21:37:42,978 INFO Let the games begin RUNDIR: runs/RED_Res50/2023051500
+2023-05-15 21:37:42,991 INFO use 1 gpus
+2023-05-15 21:37:42,991 INFO configure: {'model': {'arch': 'rednet', 'backbone': 'resnet50'}, 'data': {'dataset': 'lpcvc', 'train_split': 'train', 'val_split': 'val', 'img_rows': 512, 'img_cols': 512, 'path': '/home/sangho/for_LPCV/2023LPCVC_SampleSolution/dataset/LPCVC/'}, 'training': {'n_workers': 2, 'train_iters': 120000, 'batch_size': 16, 'val_interval': 500, 'print_interval': 25, 'loss': {'name': 'OhemCELoss2D', 'thresh': 0.7, 'ignore_index': 250}, 'optimizer': {'name': 'adaoptimizer', 'momentum': 0.9, 'lr_multi': 1, 'bn_wd_disable': False, 'wd': 0.0005, 'lr0': 0.01, 'max_iter': 120000, 'power': 0.9, 'warmup_steps': 1000, 'warmup_start_lr': 1e-05}, 'train_augmentations': {'rotate': 5, 'brightness': 0.5, 'contrast': 0.5, 'saturation': 0.5, 'scale': [512, 512], 'rscale': [0.5, 2], 'hflip': 0.5, 'rcrop': [384, 384], 'norm': 255.0, 'cnorm': [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]]}, 'resume': None, 'visdom': False}, 'validating': {'densecrf': False, 'resume': None, 'n_workers': 1, 'batch_size': 1, 'outpath': None, 'val_augmentations': {'scale': [512, 512], 'norm': 255.0, 'cnorm': [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]]}}, 'local_rank': 0}
+2023-05-15 21:37:42,993 INFO Using training seting {'n_workers': 2, 'train_iters': 120000, 'batch_size': 16, 'val_interval': 500, 'print_interval': 25, 'loss': {'name': 'OhemCELoss2D', 'thresh': 0.7, 'ignore_index': 250}, 'optimizer': {'name': 'adaoptimizer', 'momentum': 0.9, 'lr_multi': 1, 'bn_wd_disable': False, 'wd': 0.0005, 'lr0': 0.01, 'max_iter': 120000, 'power': 0.9, 'warmup_steps': 1000, 'warmup_start_lr': 1e-05}, 'train_augmentations': {'rotate': 5, 'brightness': 0.5, 'contrast': 0.5, 'saturation': 0.5, 'scale': [512, 512], 'rscale': [0.5, 2], 'hflip': 0.5, 'rcrop': [384, 384], 'norm': 255.0, 'cnorm': [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]]}, 'resume': None, 'visdom': False}
+2023-05-15 21:37:42,993 INFO Using OhemCELoss2D with {'thresh': 0.7, 'ignore_index': 250, 'n_min': 147456} params
+2023-05-15 21:37:42,993 INFO Using loss OhemCELoss2D()
+2023-05-15 21:37:43,989 INFO Model initialized on GPUs.
+2023-05-15 21:37:52,886 INFO Iter [25/120000]  Loss: 5.3122  Time/Image: 0.0212
+2023-05-15 21:38:00,558 INFO Iter [50/120000]  Loss: 5.1142  Time/Image: 0.0186
+2023-05-15 21:38:08,514 INFO Iter [75/120000]  Loss: 5.1132  Time/Image: 0.0182
+2023-05-15 21:38:16,201 INFO Iter [100/120000]  Loss: 5.2149  Time/Image: 0.0187
+2023-05-15 21:38:23,903 INFO Iter [125/120000]  Loss: 5.1040  Time/Image: 0.0187
+2023-05-15 21:38:31,897 INFO Iter [150/120000]  Loss: 5.2169  Time/Image: 0.0182
+2023-05-15 21:38:39,621 INFO Iter [175/120000]  Loss: 5.2102  Time/Image: 0.0187
+2023-05-15 21:38:47,629 INFO Iter [200/120000]  Loss: 5.1798  Time/Image: 0.0183
+2023-05-15 21:38:55,370 INFO Iter [225/120000]  Loss: 5.2070  Time/Image: 0.0188
+2023-05-15 21:39:03,117 INFO Iter [250/120000]  Loss: 5.1115  Time/Image: 0.0188
+2023-05-15 21:39:11,160 INFO Iter [275/120000]  Loss: 5.2849  Time/Image: 0.0183
+2023-05-15 21:39:18,920 INFO Iter [300/120000]  Loss: 5.2253  Time/Image: 0.0188
+2023-05-15 21:39:26,956 INFO Iter [325/120000]  Loss: 5.3130  Time/Image: 0.0184
+2023-05-15 21:39:34,719 INFO Iter [350/120000]  Loss: 5.1954  Time/Image: 0.0188
+2023-05-15 21:39:42,493 INFO Iter [375/120000]  Loss: 5.2490  Time/Image: 0.0189
+2023-05-15 21:39:50,547 INFO Iter [400/120000]  Loss: 5.1448  Time/Image: 0.0184
+2023-05-15 21:39:58,335 INFO Iter [425/120000]  Loss: 5.1429  Time/Image: 0.0189
+2023-05-15 21:40:06,402 INFO Iter [450/120000]  Loss: 5.3115  Time/Image: 0.0184
+2023-05-15 21:40:14,187 INFO Iter [475/120000]  Loss: 5.1585  Time/Image: 0.0189
+2023-05-15 21:40:21,976 INFO Iter [500/120000]  Loss: 5.2004  Time/Image: 0.0189
+2023-05-15 21:40:23,634 INFO Overall Acc: 	: 0.2907624435424805
+2023-05-15 21:40:23,634 INFO Mean Acc : 	: 0.07396360873256852
+2023-05-15 21:40:23,634 INFO FreqW Acc : 	: 0.2273066294803654
+2023-05-15 21:40:23,634 INFO Mean IoU : 	: 0.030302040964819966
+2023-05-15 21:40:23,634 INFO 0: 0.34299735504469603
+2023-05-15 21:40:23,634 INFO 1: 0.0005316138768370689
+2023-05-15 21:40:23,634 INFO 2: 7.311643928356721e-05
+2023-05-15 21:40:23,634 INFO 3: 0.0004008445965019252
+2023-05-15 21:40:23,634 INFO 4: 0.0004337754715608506
+2023-05-15 21:40:23,634 INFO 5: 0.0025870119278213885
+2023-05-15 21:40:23,634 INFO 6: 0.001731318141406579
+2023-05-15 21:40:23,634 INFO 7: 0.05201426235308377
+2023-05-15 21:40:23,635 INFO 8: 0.01728570211953013
+2023-05-15 21:40:23,635 INFO 9: 0.0
+2023-05-15 21:40:23,635 INFO 10: 0.0014201146291421645
+2023-05-15 21:40:23,635 INFO 11: 0.0
+2023-05-15 21:40:23,635 INFO 12: 0.004753458907616037
+2023-05-15 21:40:23,635 INFO 13: 0.0
+2023-05-15 21:40:32,343 INFO Iter [525/120000]  Loss: 5.1874  Time/Image: 0.0184
+2023-05-15 21:40:40,142 INFO Iter [550/120000]  Loss: 5.1888  Time/Image: 0.0189
+2023-05-15 21:40:48,220 INFO Iter [575/120000]  Loss: 5.1906  Time/Image: 0.0184
+2023-05-15 21:40:56,024 INFO Iter [600/120000]  Loss: 5.2006  Time/Image: 0.0189
+2023-05-15 21:41:03,822 INFO Iter [625/120000]  Loss: 5.2429  Time/Image: 0.0189
+2023-05-15 21:41:11,908 INFO Iter [650/120000]  Loss: 5.2338  Time/Image: 0.0184
+2023-05-15 21:41:19,711 INFO Iter [675/120000]  Loss: 5.1820  Time/Image: 0.0189
+2023-05-15 21:41:27,800 INFO Iter [700/120000]  Loss: 5.1175  Time/Image: 0.0185
+2023-05-15 21:41:35,616 INFO Iter [725/120000]  Loss: 5.0797  Time/Image: 0.0190
+2023-05-15 21:41:43,436 INFO Iter [750/120000]  Loss: 5.1163  Time/Image: 0.0190
+2023-05-15 21:41:51,526 INFO Iter [775/120000]  Loss: 5.2379  Time/Image: 0.0185
+2023-05-15 21:41:59,351 INFO Iter [800/120000]  Loss: 5.2363  Time/Image: 0.0190
+2023-05-15 21:42:07,452 INFO Iter [825/120000]  Loss: 5.2367  Time/Image: 0.0185
+2023-05-15 21:42:15,276 INFO Iter [850/120000]  Loss: 5.1748  Time/Image: 0.0190
+2023-05-15 21:42:23,099 INFO Iter [875/120000]  Loss: 5.1664  Time/Image: 0.0190
+2023-05-15 21:42:31,214 INFO Iter [900/120000]  Loss: 5.1508  Time/Image: 0.0185
+2023-05-15 21:42:39,040 INFO Iter [925/120000]  Loss: 5.1473  Time/Image: 0.0190
+2023-05-15 21:42:47,145 INFO Iter [950/120000]  Loss: 5.1130  Time/Image: 0.0185
+2023-05-15 21:42:54,975 INFO Iter [975/120000]  Loss: 5.2759  Time/Image: 0.0190
+2023-05-15 21:43:02,801 INFO Iter [1000/120000]  Loss: 5.1588  Time/Image: 0.0190
+2023-05-15 21:43:04,401 INFO Overall Acc: 	: 0.2978690719604492
+2023-05-15 21:43:04,401 INFO Mean Acc : 	: 0.07438335630714679
+2023-05-15 21:43:04,401 INFO FreqW Acc : 	: 0.23201121990319648
+2023-05-15 21:43:04,401 INFO Mean IoU : 	: 0.030804900013996096
+2023-05-15 21:43:04,401 INFO 0: 0.3502311608744607
+2023-05-15 21:43:04,401 INFO 1: 0.0005804775338058549
+2023-05-15 21:43:04,401 INFO 2: 8.222339282632522e-05
+2023-05-15 21:43:04,401 INFO 3: 0.0003760757120592686
+2023-05-15 21:43:04,401 INFO 4: 0.00036731095729397936
+2023-05-15 21:43:04,401 INFO 5: 0.0023262451110855923
+2023-05-15 21:43:04,401 INFO 6: 0.0016418838065731009
+2023-05-15 21:43:04,401 INFO 7: 0.05237261801639325
+2023-05-15 21:43:04,401 INFO 8: 0.017373657217116697
+2023-05-15 21:43:04,401 INFO 9: 0.0
+2023-05-15 21:43:04,401 INFO 10: 0.0015006945363143273
+2023-05-15 21:43:04,401 INFO 11: 0.0
+2023-05-15 21:43:04,401 INFO 12: 0.0044108822956721696
+2023-05-15 21:43:04,401 INFO 13: 5.3707423440067885e-06
+2023-05-15 21:43:13,102 INFO Iter [1025/120000]  Loss: 5.2201  Time/Image: 0.0185
+2023-05-15 21:43:20,932 INFO Iter [1050/120000]  Loss: 5.1503  Time/Image: 0.0190
+2023-05-15 21:43:29,024 INFO Iter [1075/120000]  Loss: 5.2501  Time/Image: 0.0185
+2023-05-15 21:43:36,851 INFO Iter [1100/120000]  Loss: 5.2739  Time/Image: 0.0190
+2023-05-15 21:43:44,679 INFO Iter [1125/120000]  Loss: 5.1061  Time/Image: 0.0190
+2023-05-15 21:43:52,794 INFO Iter [1150/120000]  Loss: 5.2209  Time/Image: 0.0185
+2023-05-15 21:44:00,624 INFO Iter [1175/120000]  Loss: 5.2102  Time/Image: 0.0190
+2023-05-15 21:44:08,732 INFO Iter [1200/120000]  Loss: 5.1425  Time/Image: 0.0185
+2023-05-15 21:44:16,569 INFO Iter [1225/120000]  Loss: 5.2439  Time/Image: 0.0190
+2023-05-15 21:44:24,405 INFO Iter [1250/120000]  Loss: 5.1952  Time/Image: 0.0190

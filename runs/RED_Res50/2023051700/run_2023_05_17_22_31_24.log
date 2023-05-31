@@ -1,0 +1,27 @@
+2023-05-17 22:31:24,391 INFO Let the games begin RUNDIR: runs/RED_Res50/2023051700
+2023-05-17 22:31:24,402 INFO use 1 gpus
+2023-05-17 22:31:24,402 INFO configure: {'model': {'arch': 'rednet', 'backbone': 'resnet50'}, 'data': {'dataset': 'lpcvc', 'train_split': 'train', 'val_split': 'val', 'img_rows': 512, 'img_cols': 512, 'path': '/home/sangho/for_LPCV/2023LPCVC_SampleSolution/dataset/LPCVC/'}, 'training': {'n_workers': 2, 'train_iters': 120000, 'batch_size': 4, 'val_interval': 500, 'print_interval': 25, 'loss': {'name': 'OhemCELoss2D', 'thresh': 0.7, 'ignore_index': 250}, 'optimizer': {'name': 'adaoptimizer', 'momentum': 0.9, 'lr_multi': 1, 'bn_wd_disable': False, 'wd': 0.0005, 'lr0': 0.01, 'max_iter': 120000, 'power': 0.9, 'warmup_steps': 1000, 'warmup_start_lr': 1e-05}, 'train_augmentations': {'rotate': 5, 'brightness': 0.5, 'contrast': 0.5, 'saturation': 0.5, 'scale': [512, 512], 'rscale': [0.5, 2], 'hflip': 0.5, 'rcrop': [384, 384], 'norm': 255.0, 'cnorm': [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]]}, 'resume': None, 'visdom': False}, 'validating': {'densecrf': False, 'resume': None, 'n_workers': 1, 'batch_size': 1, 'outpath': None, 'val_augmentations': {'scale': [512, 512], 'norm': 255.0, 'cnorm': [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]]}}, 'local_rank': 0}
+2023-05-17 22:31:24,404 INFO Using training seting {'n_workers': 2, 'train_iters': 120000, 'batch_size': 4, 'val_interval': 500, 'print_interval': 25, 'loss': {'name': 'OhemCELoss2D', 'thresh': 0.7, 'ignore_index': 250}, 'optimizer': {'name': 'adaoptimizer', 'momentum': 0.9, 'lr_multi': 1, 'bn_wd_disable': False, 'wd': 0.0005, 'lr0': 0.01, 'max_iter': 120000, 'power': 0.9, 'warmup_steps': 1000, 'warmup_start_lr': 1e-05}, 'train_augmentations': {'rotate': 5, 'brightness': 0.5, 'contrast': 0.5, 'saturation': 0.5, 'scale': [512, 512], 'rscale': [0.5, 2], 'hflip': 0.5, 'rcrop': [384, 384], 'norm': 255.0, 'cnorm': [[0.485, 0.456, 0.406], [0.229, 0.224, 0.225]]}, 'resume': None, 'visdom': False}
+2023-05-17 22:31:24,404 INFO Using OhemCELoss2D with {'thresh': 0.7, 'ignore_index': 250, 'n_min': 36864} params
+2023-05-17 22:31:24,404 INFO Using loss OhemCELoss2D()
+2023-05-17 22:31:25,274 INFO Model initialized on GPUs.
+2023-05-17 22:31:30,080 INFO Iter [25/120000]  Loss: 8.5037  Time/Image: 0.0469
+2023-05-17 22:31:34,024 INFO Iter [50/120000]  Loss: 8.5848  Time/Image: 0.0383
+2023-05-17 22:31:37,976 INFO Iter [75/120000]  Loss: 8.5855  Time/Image: 0.0384
+2023-05-17 22:31:41,925 INFO Iter [100/120000]  Loss: 8.4517  Time/Image: 0.0384
+2023-05-17 22:31:45,876 INFO Iter [125/120000]  Loss: 8.6031  Time/Image: 0.0384
+2023-05-17 22:31:49,827 INFO Iter [150/120000]  Loss: 8.5630  Time/Image: 0.0384
+2023-05-17 22:31:53,790 INFO Iter [175/120000]  Loss: 8.5405  Time/Image: 0.0385
+2023-05-17 22:31:57,759 INFO Iter [200/120000]  Loss: 8.6404  Time/Image: 0.0385
+2023-05-17 22:32:01,728 INFO Iter [225/120000]  Loss: 8.5656  Time/Image: 0.0385
+2023-05-17 22:32:05,698 INFO Iter [250/120000]  Loss: 8.5911  Time/Image: 0.0385
+2023-05-17 22:32:09,735 INFO Iter [275/120000]  Loss: 8.4914  Time/Image: 0.0377
+2023-05-17 22:32:13,706 INFO Iter [300/120000]  Loss: 8.5539  Time/Image: 0.0385
+2023-05-17 22:32:17,682 INFO Iter [325/120000]  Loss: 8.5221  Time/Image: 0.0386
+2023-05-17 22:32:21,660 INFO Iter [350/120000]  Loss: 8.4188  Time/Image: 0.0386
+2023-05-17 22:32:25,636 INFO Iter [375/120000]  Loss: 8.7870  Time/Image: 0.0386
+2023-05-17 22:32:29,615 INFO Iter [400/120000]  Loss: 8.5094  Time/Image: 0.0386
+2023-05-17 22:32:33,595 INFO Iter [425/120000]  Loss: 8.5308  Time/Image: 0.0386
+2023-05-17 22:32:37,578 INFO Iter [450/120000]  Loss: 8.4194  Time/Image: 0.0387
+2023-05-17 22:32:41,558 INFO Iter [475/120000]  Loss: 8.6117  Time/Image: 0.0386
+2023-05-17 22:32:45,546 INFO Iter [500/120000]  Loss: 8.6915  Time/Image: 0.0387

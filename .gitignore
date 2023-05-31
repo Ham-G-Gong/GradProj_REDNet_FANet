@@ -1,0 +1,10 @@
+## Ignore File ##
+
+# train Image files
+*.png
+
+# model weight files
+*.pth
+
+# model weight files
+*.pkl

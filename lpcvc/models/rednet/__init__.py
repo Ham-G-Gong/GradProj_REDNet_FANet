@@ -1,0 +1,1 @@
+from .rednet import *
