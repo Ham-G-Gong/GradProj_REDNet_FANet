@@ -11,11 +11,11 @@
 
 ## Model
 ### FANet
-![FANet structure](./figure/FANet_arch.png)
+![FANet structure](./figure/FANet_arch.jpg)
 
 
 ### REDNet
-![REDNet structure](./figure/REDNet_arch.png)
+![REDNet structure](./figure/REDNet_arch.jpg)
 
 ### env seting and Dependencies
 1. [ANACONDA](https://www.anaconda.com/) 를 설치해 주세요.
@@ -38,4 +38,3 @@ run_시간.log 로 학습 log 를 확인 할 수 있습니다.
 - 100 장의 validation set
 - 재난 이미지: 512x512x3
 - GroundTruth 이미지: 512x512x3
-
