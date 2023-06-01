@@ -1,6 +1,6 @@
 # GradProj_REDNet_FANet
 
-> writer 하상호
+> writer sangho
 
 - UAV 온디바이스 재난 영역 검출 소프트웨어 개발
 
