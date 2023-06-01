@@ -11,11 +11,11 @@
 
 ## Model
 ### FANet
-![FANet structure](./figure/FANet_arch.png)
+![FANet structure](./figure/FANet_arch.jpg)
 
 
 ### REDNet
-![REDNet structure](./figure/REDNet_arch.png)
+![REDNet structure](./figure/REDNet_arch.jpg)
 
 ### env seting and Dependencies
 1. [ANACONDA](https://www.anaconda.com/) 를 설치해 주세요.
