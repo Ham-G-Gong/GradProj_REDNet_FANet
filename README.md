@@ -38,4 +38,3 @@ run_시간.log 로 학습 log 를 확인 할 수 있습니다.
 - 100 장의 validation set
 - 재난 이미지: 512x512x3
 - GroundTruth 이미지: 512x512x3
-
